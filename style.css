@@ -2,45 +2,75 @@
   padding: 0;
   margin: 0;
 }
-html {
-  text-align: center;
-}
-.header {
-  padding: 1rem;
+.heading {
+  padding: 0.5rem;
   background-color: rgba(100, 237, 134, 0.596);
 }
 body {
+  text-align: center;
   background: url(./assests/pictures/background.jpg) no-repeat;
   background-size: cover;
-  height: 100vh;
-  background-color: rgba(128, 128, 128, 0.397);
+  min-height: 100vh;
+  background-color: hsl(0, 0%, 20%);
   background-blend-mode: overlay;
+  color:white;
 }
-.main {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  min-height: 50vh;
-}
+
 .main-frame {
   background-color: rgba(0, 0, 255, 0.493);
   padding: 2rem;
+  margin-top: 5rem;
 }
-.keypad{
-    display: flex;
-    gap: 1rem;
+.keypad {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  flex-wrap: wrap;
 }
-.key{
-    padding: 1rem;
-    font-size: 1.5rem;
-    border: 5px solid rgba(0, 0, 0, 0.493);
-    background-color: darkkhaki;
-    transition: all 0.1s;
+.key {
+  padding: 1rem;
+  font-size: 1.5rem;
+  border: 5px solid rgba(0, 0, 0, 0.493);
+  background-color: darkkhaki;
+  transition: all 0.1s;
+  color:rgb(20, 20, 20);
 }
 
 
-.play{
-    border: 5px solid rgba(243, 227, 7,0.7);
-    transform: scale(1.2);
-    background-color: rgba(0, 19, 0, 0.719);
+/* js classes */
+.play {
+  border: 5px solid rgba(243, 227, 7, 0.7);
+  transform: scale(1.2);
+  background-color: rgba(0, 19, 0, 0.719);
 }
+
+/* responsive design */
+.mobile-heading {
+  display: none;
+  color: hsl(0, 75%, 50%);
+  text-shadow: 0 0 1px black;
+  background-color: rgb(236, 231, 192);
+  border: 2px solid rgb(131, 0, 0);
+  font-size: 1rem;
+}
+
+@media (hover: none) {
+  .mobile-heading {
+    display: block;
+    opacity: 0;
+    animation: entry 2s 1s forwards;
+  }
+}
+
+@media only screen and (max-width: 760px) {
+  .key{
+    padding:0.5rem;
+  }
+}
+
+@keyframes entry {
+  to {
+    opacity: 1;
+  }
+}
+
