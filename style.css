@@ -8,7 +8,7 @@
 }
 body {
   text-align: center;
-  background: url(./assests/pictures/background.jpg) no-repeat;
+  background: url(./assets/pictures/background.jpg) no-repeat;
   background-size: cover;
   min-height: 100vh;
   background-color: hsl(0, 0%, 20%);
