@@ -13,11 +13,11 @@ body {
   min-height: 100vh;
   background-color: hsl(0, 0%, 20%);
   background-blend-mode: overlay;
-  color:white;
+  color: white;
 }
 
 .main-frame {
-  background-color: rgba(0, 0, 255, 0.493);
+  background-color: rgba(0, 0, 255, 0.5);
   padding: 2rem;
   margin-top: 5rem;
 }
@@ -30,12 +30,12 @@ body {
 .key {
   padding: 1rem;
   font-size: 1.5rem;
-  border: 5px solid rgba(0, 0, 0, 0.493);
+  border: 5px solid rgba(0, 0, 0, 0.5);
   background-color: darkkhaki;
   transition: all 0.1s;
-  color:rgb(20, 20, 20);
+  color: rgb(20, 20, 20);
 }
-.key:hover{
+.key:hover {
   transform: scale(1.2);
   background-color: hsl(55, 29%, 75%);
 }
@@ -50,8 +50,8 @@ body {
 /* responsive design */
 
 @media only screen and (max-width: 760px) {
-  .key{
-    padding:0.5rem;
+  .key {
+    padding: 0.5rem;
   }
 }
 
@@ -60,4 +60,3 @@ body {
     opacity: 1;
   }
 }
-
