@@ -1,0 +1,62 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+.heading {
+  padding: 0.5rem;
+  background-color: rgba(100, 237, 134, 0.596);
+}
+body {
+  text-align: center;
+  background: url(./assets/pictures/background.jpg) no-repeat;
+  background-size: cover;
+  min-height: 100vh;
+  background-color: hsl(0, 0%, 20%);
+  background-blend-mode: overlay;
+  color: white;
+}
+
+.main-frame {
+  background-color: rgba(0, 0, 255, 0.5);
+  padding: 2rem;
+  margin-top: 5rem;
+}
+.keypad {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.key {
+  padding: 1rem;
+  font-size: 1.5rem;
+  border: 5px solid rgba(0, 0, 0, 0.5);
+  background-color: darkkhaki;
+  transition: all 0.1s;
+  color: rgb(20, 20, 20);
+}
+.key:hover {
+  transform: scale(1.2);
+  background-color: hsl(55, 29%, 75%);
+}
+
+/* js classes */
+.play {
+  border: 5px solid rgba(243, 227, 7, 0.7);
+  transform: scale(1.2);
+  background-color: rgba(0, 19, 0, 0.719);
+}
+
+/* responsive design */
+
+@media only screen and (max-width: 760px) {
+  .key {
+    padding: 0.5rem;
+  }
+}
+
+@keyframes entry {
+  to {
+    opacity: 1;
+  }
+}
